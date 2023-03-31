@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Reports</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script type="module" src="scripts/reportScript.js"></script>
+</head>
+
+<body>
+	<nav>
+		<a href="https://jproj.xyz/login/">Home</a>
+		<a href="https://jproj.xyz/pos">Point of Sales</a>
+		<a href="https://jproj.xyz/manage-products">Manage Products</a>
+		<a href="https://jproj.xyz/manage-members"> Manage Members</a>
+		<a href="https://jproj.xyz/manage-sales"> Manage Sales</a>
+		<a href="https://jproj.xyz/reports">Report</a>
+	</nav>
+    
+	<h1>Reports</h1>
+	<div id="tables" class="selectors">
+        <form id="dateRange">
+            <label for="startdate">From: </label><input type="date" name="startdate" id="startdate" value=""><br>
+            <label for="enddate">From: </label><input type="date" name="enddate" id="enddate" value=""><br>
+            <input type="submit">
+        </form>
+    </div>
+
+	<div id="reportContainer">
+      
+    </div>
+
+    <textarea id="csvTexarea" readonly style="height: 200px;"></textarea>
+    <button id="downloadButton">download</button>
+    <button id="copyButton">copy</button>
+	
+
+		
+
+</body>
+</html>

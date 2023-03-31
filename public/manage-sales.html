@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Manage Sales</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script type="module" src="scripts/manageSales.js"></script>
+</head>
+
+<body>
+	<nav>
+		<a href="https://jproj.xyz/login/">Home</a>
+		<a href="https://jproj.xyz/pos">Point of Sales</a>
+		<a href="https://jproj.xyz/manage-products">Manage Products</a>
+		<a href="https://jproj.xyz/manage-members"> Manage Members</a>
+		<a href="https://jproj.xyz/manage-sales"> Manage Sales</a>
+		<a href="https://jproj.xyz/reports">Report</a>
+	</nav>
+	
+	<h1>Manage Sales</h1>
+
+	<form id="viewBySalesID">
+		<label for="salesID">Sales ID: </label><input type="text" name="salesID" id="salesID" value="">
+		<button type="button" name="filterBySalesId" id="filterBySalesId" class="editButton">Filter</button>
+	</form>
+
+    <h2>Sales List</h2>
+
+	<div id="displaySales"></div>
+
+</body>
+</html>

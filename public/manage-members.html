@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Manage Members</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script type="module" src="scripts/displayscript.js"></script>
+	<script type="module" src="scripts/manageMembers.js"></script>
+</head>
+
+<body>
+	<nav>
+		<a href="https://jproj.xyz/login/">Home</a>
+		<a href="https://jproj.xyz/pos">Point of Sales</a>
+		<a href="https://jproj.xyz/manage-products">Manage Products</a>
+		<a href="https://jproj.xyz/manage-members"> Manage Members</a>
+		<a href="https://jproj.xyz/manage-sales"> Manage Sales</a>
+		<a href="https://jproj.xyz/reports">Report</a>
+	</nav>
+	
+	<h1>Manage Members</h1>
+	<div id="tables" class="selectors">
+		<h2>Tables</h2>
+		<ul>
+			<li><button >Members</button></li>
+			<li><button>Requests</button></li>
+		</ul>
+	</div>
+
+	<div id="formDivision">
+	<!-- <div class="main" id="main_list"> -->
+		<button id="memberEditBtn" class = "productBtn">Edit</button>
+		<button id="memberDeleteBtn" class = "productBtn">Delete</button>
+	</div>	
+
+	<div id="deleteMemberFrom">
+		<label for="deleteMember">Member Email: </label><input type="text" name="deleteMember" id="deleteMember" value=""><br>
+		<button type="button" name="cancelDeleteBtn" id="cancelMemDeleteBtn">Cancel</button>
+		<button type="button" name="deleteMemberBtn" id="deleteMemberBtn">Delete</button>
+	</div>
+
+	<div id="updateMemberFrom">
+		<label for="updateMember">Member Email: </label><input type="text" name="updateMember" id="updateMember" value=""><br>
+		<label for="memberCategory">Updating Value: </label>
+		<select name="memberCategory" id="memberCategory">
+			<option disabled selected value> -- select column -- </option>
+			<option value="Name">Name</option>
+			<option value="DOB">Date of Birth (YYYY/MM/DD)</option>
+			<option value="Email">Email</option>
+			<option value="MobileNo">Mobile Number</option>
+			<option value="RolePermission">Permissions</option>
+		</select><br>
+		<label for="updateValue">Value: </label><input type="text" name="updateValue" id="updateValue" value=""><br>
+		<button type="button" name="cancelUpdateBtn" id="cancelUpdateBtn">Cancel</button>
+		<button type="button" name="updateMemberBtn" id="updateMemberBtn">Update</button>
+	</div>
+
+    <h2>Member List</h2>
+
+	<div id="displayMembers"></div>
+
+</body>
+</html>

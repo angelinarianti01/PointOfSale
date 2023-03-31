@@ -1,0 +1,196 @@
+nav {
+	background-color: #FF7F00;
+	display: inline-block;
+	height: 20%;
+	width: 100%;
+	padding: 4%;
+	margin: 0%;
+	margin-left:-2%;
+	margin-top:-2%;
+}
+
+nav a {
+	font-family: arial;
+	font-size: 25px;
+	padding: 3%;
+	color: white;
+	font-style: normal;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color:rgba(255, 255, 255, 0.32);
+	color: black;
+}
+
+h1 {
+	display: none;
+}
+
+h2 {
+	font-family: arial;
+	font-size: 25px;
+}
+
+/* use an ID please */
+/* table, th{
+	border:0px solid black;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 15px;
+  } */
+
+td, button {
+	font-family: arial;
+	font-size: 15px;
+	padding: 3%;
+	width: 100%;
+}
+
+div.main {
+	margin-left: 22%;
+}
+
+div#products_list button {
+	padding: 2%;
+	width: 12%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	background-color: white;
+	border: 1px solid rgb(200,200,200);
+	box-shadow: 5px 5px rgba(0,0,0,0.16);
+	border-radius: 30px;
+	margin: 1%;
+}
+
+div.selectors  {
+	min-height: 500px;
+	float:left;
+	padding-right: 5%;
+	width: 15%;
+	border-right: 1px solid rgb(112,112,112);
+}
+
+div.selectors ul {
+	width: 100%;
+	margin-left: 1%;
+	list-style-type: none;
+}
+
+/*pos page*/
+
+div#receipt {
+	min-height: 500px;
+	float:right;
+	border-left: 1px solid rgb(112,112,112);
+	padding-left: 2%;
+	width: 25%;
+}
+
+/* div#receipt table {
+
+} */
+
+.payment_method {
+	float: left;
+	width:50%;
+}
+
+div#receipt table tr {
+	vertical-align: top;
+	text-align: left;
+}
+
+/*manage products page*/
+
+.productBtn {
+	width: 10%;
+	padding: 2%;
+}
+
+div#productInputs button, div#updateProductFrom button, div#deleteProductFrom button, div#deleteMemberFrom button, div#updateMemberFrom button
+{
+	width: 20%;
+	padding: 1%;
+	margin-top: 3%;
+}
+
+div#productInputs input, div#updateProductFrom input, div#deleteProductFrom input, div#deleteMemberFrom input, div#updateMemberFrom input
+{
+	width: 20%;
+	padding: 1%;
+	margin-top: 3%;
+}
+
+div#productInputs select, div#updateProductFrom select, div#updateMemberFrom select
+{
+	width: 25%;
+	padding: 1%;
+	margin-top: 3%;
+}
+
+div#productInputs, div#updateProductFrom, div#deleteProductFrom, div#deleteMemberFrom, div#updateMemberFrom
+{
+	border:1px solid black;
+	display: none;
+}
+
+#formDivision, #updateProductFrom, #deleteProductFrom, #deleteMemberFrom, #updateMemberFrom
+{
+	width: 100%;
+	margin-left: 22%;
+	border:0px solid black;
+}
+
+#productTable, #memberTable{
+	margin: 5%;
+	text-align: center;
+}
+
+#productTable tr:nth-child(even){
+	background-color: #D6EEEE;
+}
+
+
+#memberTable tr:nth-child(even)
+{
+	background-color: #efc5df;
+}
+
+#productTable td, #memberTable td
+{
+	background-color: rgba(255, 255, 255, 0.32);
+	padding: 0.5%;
+}
+
+#productTable td, #productTable th, #memberTable td, #memberTable th
+{
+		border-bottom: 1px solid #DDD;
+		width: 10%;
+}
+
+
+/* -----JOSH STYLES------- */
+
+/* this is done as a hack because the default td and button styling doesn't look good on table items, but shouldn't be defined globally */
+.jtml_td, .deleteButton, .editButton {
+	/* padding: initial; */
+	width: initial;
+}
+
+.deleteButton, .editButton {
+	padding: 2px 10px;
+	   margin: 3px;
+}
+
+th, td {
+	font-family: arial;
+	padding: 3px 10px;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #f5f1f2;
+}
+
+table {border-collapse: collapse;}

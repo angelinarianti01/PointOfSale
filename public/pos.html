@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Point Of Sales</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script type="module" src="scripts/displayscript.js"></script>
+</head>
+
+<body>
+	<nav>
+		<a href="https://jproj.xyz/login/">Home</a>
+		<a href="https://jproj.xyz/pos">Point of Sales</a>
+		<a href="https://jproj.xyz/manage-products">Manage Products</a>
+		<a href="https://jproj.xyz/manage-members"> Manage Members</a>
+		<a href="https://jproj.xyz/manage-sales"> Manage Sales</a>
+		<a href="https://jproj.xyz/reports">Report</a>
+	</nav>
+
+	<h1>Point Of Sale</h1>
+	<div id="categories" class="selectors">
+		<h2>Categories</h2>
+		<label for="Category">Updating Value: </label>
+        <select name="Category" id="Category">
+            <option disabled selected value> -- select column -- </option>
+            <option value="All" selected>All</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Beverages">Beverages</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Dairy">Dairy</option>            
+        </select>
+	</div>
+	<div id="receipt">
+		<h2 id="receipt_number">Receipt #</h2>
+		<label for="customer">Browse Customer</label>
+		<input type="text" id="customer" name="customer">
+		<table>
+			<tbody id="receipt_content">
+
+			</tbody>
+		</table>
+		<p>$<strong id="total">0</strong></p>
+		<button class="payment_method">Cash</button>
+		<button class="payment_method">EFTPOS</button>
+	</div>
+	<h2>Products</h2>
+	<div id="products_list" class="main">		
+	</div>
+
+
+</body>
+
+</html>
